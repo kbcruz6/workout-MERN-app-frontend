@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.switch-checkbox:checked + .switch-label .switch-button{
+
+  /* left: calc(100%-2px); */
+  left:100%;
+  transform: translateX(-22px);
+
+}
