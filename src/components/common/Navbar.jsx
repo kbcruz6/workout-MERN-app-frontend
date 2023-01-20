@@ -7,9 +7,11 @@ const Navbar = () => {
   const { checked, onToggle } = useContext(ThemeContext);
 
   return (
-    <div className="w-full z-10 fixed flex flex-row p-3 justify-between px-10 shadow-md shadow-slate-500 items-center bg-gray-100 dark:bg-slate-900 dark:text-white dark:shadow-black duration-300">
+    <div className="w-full z-10 fixed flex flex-row p-3 justify-between sm:px-20 px-10 shadow-md shadow-slate-500 items-center bg-gray-100 dark:bg-slate-900 dark:text-white dark:shadow-black duration-300">
       <div data-aos="fade" data-aos-duration="2000" data-aos-delay="100">
-        <h1 className="font-bold text-3xl duration-300">Beast Workout</h1>
+        <h1 className="font-bold sm:text-3xl text-xl duration-300">
+          Beast Workout
+        </h1>
       </div>
       <div className="flex flex-row justify-center items-center gap-3 font-bold">
         {/*//! HOME  */}

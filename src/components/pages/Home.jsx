@@ -30,7 +30,7 @@ const Home = () => {
   }, [auxOne]);
 
   return (
-    <div className="flex sm:flex-row flex-col w-full h-full justify-around sm:items-start items-center pt-16">
+    <div className="flex sm:flex-row flex-col w-full h-full justify-around sm:items-start items-center pt-16 px-8">
       {/*//! WORKOUTS BODY  */}
       <div className="p-6 flex flex-col gap-5 w-full">
         {workouts &&
