@@ -5,7 +5,7 @@ import Details from "../common/Details";
 import AddForm from "../common/AddForm";
 
 const Home = () => {
-  const URL = "http://localhost:4000/api/workouts/";
+  const URL = "https://workout-mern-app-backend.vercel.app/api/workouts/";
   const { workouts, setWorkouts, auxOne, setWorkoutObj } =
     useContext(WorkoutContext);
 

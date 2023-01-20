@@ -19,7 +19,9 @@ const Update = () => {
   useEffect(() => {
     const fetchWorkout = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/workouts/");
+        const res = await axios.get(
+          "https://workout-mern-app-backend.vercel.app/api/workouts/"
+        );
         let result = res.data.find((item) => item._id == workoutId);
         console.log(workoutId);
         setWorkouts(result);
@@ -40,7 +42,7 @@ const Update = () => {
     e.preventDefault();
     try {
       await axios.patch(
-        "http://localhost:4000/api/workouts/" + workoutId,
+        "https://workout-mern-app-backend.vercel.app/api/workouts/" + workoutId,
         workouts
       );
       navigate("/");

@@ -9,7 +9,10 @@ const AddForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/api/workouts/", workoutObj);
+      await axios.post(
+        "https://workout-mern-app-backend.vercel.app/api/workouts/",
+        workoutObj
+      );
     } catch (error) {
       console.log(error);
     }
